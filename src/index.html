@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ant-design-icons/4.7.0/index.umd.min.js"
+        integrity="sha512-z5FNRTyztWZ5s1kKiRNfN5EZ2OX8QnV9nEU7n/vKPXLlvfUQDFoXVswtHL1FQeuFY2acFX2FlYIsjFGZ/5OHbw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="containers bg-gray-50">
+        <div class="header bg-gray-200">
+            <button id="menu" class="menu">
+                <span class="fa fa-bars"></span>
+                <!-- <i class="fa fa-home"></i> -->
+            </button>
+            <div class="ml-5 flex items-center dash">
+                <h2>Dashboard</h2>
+                <div class='box h-64 ml-8 mr-8 dsearch'>
+                    <input class='searchBtnInput' type='text' placeholder='Search' />
+                    <span><i class="fa fa-search"></i></span>
+                </div>
+
+                <ul class="flex">
+                    <li class="flex-hide-header-list flex items-center mr-20">
+                        <div><i class="bi bi-grid-1x2"></i> </div>Units
+                    </li>
+                    <li class="flex-hide-header-list flex items-center mr-40">
+                        <div class="text-2xl"><i class="bi bi-filter"></i></div>Sort By:Newest
+                    </li>
+                    <li class="flex-hide-header-list flex items-center">
+                        <div class="text-xl"><i class="bi bi-bell"></i></div>
+                    </li>
+                    <li class="flex-header-img flex items-center ml-4"><img class=" rounded-full h-10"
+                            src="../assets/images/marie.jpg" /></li>
+                </ul>
+            </div>
+        </div>
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="flex bg-white items-center w-full h-20 text-2xl -mt-5">
+                <div class="ml-8 h-10 items-center">
+                    <img src="../assets/images/Coat_of_arms_of_Nigeria.svg" class=" h-6" alt="">
+                </div>
+                <h2 class="">PMIS</h2>
+                <div class="close" id="close-btn">
+                    <span class="fa fa-times"></span>
+                </div>
+            </div>
+            <ul class="bg-gray-100 h-full">
+                <li class="flex items-center mb-3 mt-4 ml-5 text-md bg-gray-300 hover: borderd">
+                    <div><i class="bi bi-grid"></i> </div><a href="index.html">Dashboard </a>
+                </li>
+                <li class="flex items-center mb-3 ml-5 hover:bg-gray-300 borderd">
+                    <div><i class="fa fa-building"></i> </div><a href="constructions.html">Constructions</a>
+                </li>
+                <li class="flex items-center mb-3 ml-5 hover:bg-gray-300 borderd">
+                    <div><i class="fa fa-building"></i></div>Renovations
+                </li>
+                <li class="flex items-center mb-3 ml-5 hover:bg-gray-300 borderd">
+                    <div><i class="bi bi-chat-square-dots"></i> </div>Communication
+                </li>
+                <li class="flex items-center mb-3 ml-5 hover:bg-gray-300 borderd">
+                    <div><i class="bi bi-life-preserver"></i> </div>Life Skill
+                </li>
+                <li class="flex items-center mb-3 ml-5 hover:bg-gray-300 borderd">
+                    <div><i class="fa fa-laptop"></i> </div>Digital literacy
+                </li>
+                <li class="flex items-center mb-3 ml-5 hover:bg-gray-300 borderd">
+                    <div><i class="fas fa-street-view"></i> </div>Girls Scholarship
+                </li>
+                <li class="flex items-center w-64 ml-5 hover:bg-gray-300 borderd mb-6">
+                    <div><img src="../assets/images/Vector.svg" alt=""></i></div>System Strenghtening
+                </li>
+                <li class="flex items-center mb-40 ml-5 hover:bg-gray-300 borderd">
+                    <div><i class="bi bi-file-earmark-image-fill"></i></div>Reports
+                </li>
+                <li class="flex items-center  ml-5 hover:bg-gray-300 borderd ">
+                    <div class="hover:bg-gray-300"><i class="bi bi-gear "></i> </div>Settings
+                </li>
+            </ul>
+        </div>
+        <!-- End of sidebar -->
+        <!-- ratings -->
+        <div class="ratings overflow-x-scroll h-80 flex w-50 mb-2">
+            <div class="ratings bg-gray-200 rounded-md mr-6">
+                <div>
+                    <div class=" -mt-5 ml-20 mb-4">
+                        <h5>LGAs</h5>
+                    </div>
+
+                    <div class="boxx">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number ml-3">
+                                <h2>34</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class=" bg-slate-100 w-24 h-8 rounded-xl ml-12 mr-5 mt-20  text-gray-500 hover:bg-slate-300 text-center leading-3">
+                        <p>view</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ratings bg-gray-200 rounded-md mr-6">
+                <div>
+                    <div class=" -mt-5 ml-10 mb-4">
+                        <h5>Constructions</h5>
+                    </div>
+
+                    <div class="boxx">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number ml-3">
+                                <h2>300</h2>
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class=" bg-slate-100 w-24 h-8 rounded-xl ml-12 mr-5 mt-20  text-gray-500 hover:bg-slate-300 text-center leading-3">
+                        <p>view</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ratings bg-gray-200 rounded-md mr-6">
+                <div>
+                    <div class=" -mt-5 ml-10 mb-4">
+                        <h5>Renovations</h5>
+                    </div>
+
+                    <div class="boxx">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number ml-3">
+                                <h2>800</h2>
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class=" bg-slate-100 w-24 h-8 rounded-xl ml-12 mr-5 mt-20  text-gray-500 hover:bg-slate-300 text-center leading-3">
+                        <p>view</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ratings bg-gray-200 rounded-md mr-6">
+                <div>
+                    <div class=" -mt-5 ml-16 mb-4">
+                        <h5>Schools</h5>
+                    </div>
+
+                    <div class="boxx">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number ml-3">
+                                <h2>1000</h2>
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class=" bg-slate-100 w-24 h-8 rounded-xl ml-12 mr-5 mt-20  text-gray-500 hover:bg-slate-300 text-center leading-3">
+                        <p>view</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ratings bg-gray-200 rounded-md ">
+                <div>
+                    <div class=" -mt-5 ml-10 mb-4">
+                        <h5>Beneficiaries</h5>
+                    </div>
+
+                    <div class="boxx">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number ml-3">
+                                <h2>10000</h2>
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class=" bg-slate-100 w-24 h-8 rounded-xl ml-12 mr-5 mt-20  text-gray-500 hover:bg-slate-300 text-center leading-3">
+                        <p>view</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of ratings -->
+        <!-- charts -->
+
+        <div class="charts bg-gray-200 rounded-md h-60">
+            <div class=" -mt-5">
+                <h6>Constructions</h6>
+                <p class="text-sm">
+                    progress Charts(%)
+                </p>
+            </div>
+            <canvas id="myChart" class=" h-9"></canvas>
+        </div>
+
+        <div class="charts2 bg-gray-200 rounded-md h-60 mb-6 ">
+            <div class=" -mt-5">
+                <h6 class=" h-3">Renovations</h6>
+                <p class="text-sm">
+                    progress
+                </p>
+            </div>
+            <canvas id="Renovations"></canvas>
+        </div>
+        <!-- charts -->
+        <div class="ratings overflow-x-scroll h-40 flex w-50 mb-2">
+            <div class="ComProg bg-gray-200 rounded-md mr-4">
+                <div class="w-56 flex flex-col">
+                    <h5 class="progHeader">Communication programs</h5>
+                    <span class="ml-20 progSpan">20000+</span>
+                    <p class="ml-14 progPara font-light">Impressions</p>
+                </div>
+            </div>
+            <div class="LiveSkills bg-gray-200 rounded-md mr-4">
+                <div class="w-56 flex flex-col">
+                    <h5 class="progHeader ml-16">Life Skills</h5>
+                    <span class="ml-20 progSpan">20000+</span>
+                    <p class="ml-14 progPara font-light">Beneficiaries</p>
+                </div>
+            </div>
+            <div class="DigitalLit bg-gray-200 rounded-md mr-4">
+                <div class="w-56 flex flex-col">
+                    <h5 class="progHeader ml-10">Digital Literacy</h5>
+                    <span class="ml-20 progSpan">20000+</span>
+                    <p class="ml-14 progPara font-light">Beneficiaries</p>
+                </div>
+            </div>
+            <div class="GirlsScholarship bg-gray-200 rounded-md mr-4">
+                <div class="w-56 flex flex-col">
+                    <h5 class="progHeader ml-10">Girls Scholarship</h5>
+                    <span class="ml-20 progSpan">20000+</span>
+                    <p class="ml-14 progPara font-light">Beneficiaries</p>
+                </div>
+            </div>
+            <div class="CommunicationProg bg-gray-200 rounded-md mr-4">
+                <div class="w-56 flex flex-col">
+                    <h5 class="progHeader">Communication programs</h5>
+                    <span class="ml-20 progSpan">20000+</span>
+                    <p class="ml-14 progPara font-light">Impressions</p>
+                </div>
+            </div>
+            <div class="CommunicationProg bg-gray-200 rounded-md mr-4">
+                <div class="w-56 flex flex-col">
+                    <h5 class="progHeader">Communication programs</h5>
+                    <span class="ml-20 progSpan">20000+</span>
+                    <p class="ml-14 progPara font-light">Impressions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="UsersReport bg-gray-200 ">
+            <div class="flex flex-col items-center">
+                <h5 class="mb-6 progPara">Users Reports</h5>
+                <button
+                    class="bg-green-600 text-white font-bold py-2 px-4 rounded w-36 mb-6 hover:bg-green-500 focus:outline-none">View</button>
+            </div>
+        </div>
+        <div class="UsersReport2 bg-gray-200">
+            <div class="flex flex-col items-center">
+                <h5 class="mb-6 progPara">Project Reports</h5>
+                <button
+                    class="bg-green-600 text-white font-bold py-2 px-4 rounded w-36 hover:bg-green-500 focus:outline-none">View</button>
+            </div>
+        </div>
+        <div class="UsersReport3 bg-gray-200 ">
+            <div class="flex flex-col items-center">
+                <h5 class="mb-6 progPara">Sent Notifications</h5>
+                <button
+                    class="bg-green-600 text-white font-bold py-2 px-4 rounded w-36 hover:bg-green-500 focus:outline-none">View</button>
+            </div>
+        </div>
+        <div class="UsersReport4 bg-gray-200 mr-3 ">
+            <div class="flex flex-col items-center">
+                <h5 class="mb-6 progPara">Send Notifications</h5>
+                <button
+                    class="bg-green-600 text-white font-bold py-2 px-4 rounded w-36 hover:bg-green-500 focus:outline-none">Create</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="mychart.js"></script>
+
+</body>
+
+</html>
