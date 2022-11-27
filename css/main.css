@@ -109,15 +109,56 @@ small {
   font-size: 0.75rem;
 }
 
-.row{
-  height:300px;
+/* templating */
+.grid-cols{
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
-  /* grid-row: 1 / span 1; */
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit);
 }
+
+.card > div{
+  background: var(--color-card);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  margin-top: 1rem;
+  box-shadow: var(--box-shadow-4);
+  transition: all 300ms ease;
+  display: flex;
+}
+
+.card > div:hover{
+  box-shadow: none;
+}
+
+.progress{
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+}
+
+.progress svg{
+  width: 7rem;
+  height: 7rem;
+}
+
+.progress svg circle{
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 110;
+  stroke-dashoffset: 92;
+}
+
+main .grid-cols .card .progress svg circle{
+  stroke-dasharray: 200;
+  stroke-dashoffset: -30;
+}
+
+/* enf of templating */
 
 .profile-photo {
   width: 2.8rem;
@@ -263,6 +304,15 @@ aside .sidebar .count{
   margin: 0 auto;
   gap: 1rem;
   grid-template-rows: 100px auto;
+}
+
+.content{
+  padding: 20px;
+  /* display: grid; */
+  /* width: 100%; */
+  /* margin: 0 auto; */
+  /* gap: 1rem; */
+  /* grid-template-rows: 100px auto; */
 }
 
 /* ============ Header ========= */
