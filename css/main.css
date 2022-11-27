@@ -117,19 +117,49 @@ small {
   grid-template-columns: repeat(auto-fit);
 }
 
-.card > div{
+.card{
   background: var(--color-card);
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
   margin-top: 1rem;
   box-shadow: var(--box-shadow-4);
   transition: all 300ms ease;
-  display: flex;
+  /* height: auto; */
+  /* width: auto; */
 }
 
-.card > div:hover{
+.card .card-body{
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-template-columns: 30% auto;
+  /* grid-template-columns: repeat(2, 1fr); */
+}
+
+.card:hover{
   box-shadow: none;
 }
+
+.card .card-info h5{
+  text-align: left;
+  font-weight: 100;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+
+.card .card-info h2{
+  color: var(--color-dark);
+}
+
+.card .card-btn{
+  float: right;
+}
+
+.card .card-btn button{
+  color: white;
+  background: #c9c6c6;
+}
+
 
 .progress{
   position: relative;
@@ -153,10 +183,48 @@ small {
   stroke-dashoffset: 92;
 }
 
-main .grid-cols .card .progress svg circle{
+.p1.progress svg circle{
   stroke-dasharray: 200;
   stroke-dashoffset: -30;
 }
+
+.p2.progress svg circle{
+  stroke-dasharray: 200;
+  stroke-dashoffset: -50;
+}
+
+.p3.progress svg circle{
+  stroke-dasharray: 60;
+  stroke-dashoffset: -120;
+}
+
+.content-card{
+  background: #FFFFFF;
+  border: 2px solid #F0F0F0;
+  border-radius: 10px;
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-shadow: var(--box-shadow-4);
+  transition: var(--transition-300);
+}
+
+table{
+  background: var(--color-white);
+  width: 100%;
+  padding: var(--card-padding);
+  text-align: center;
+}
+
+table tbody tr td img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+
 
 /* enf of templating */
 
@@ -645,4 +713,8 @@ main .student-table table tbody td{
 main .student-table table td img{
   height: 30px;
   width: 30px;
+}
+
+main .content h3{
+  margin-top: 2rem;
 }
