@@ -33,6 +33,8 @@
   --box-shadow-4: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
   --transition-300: all 300ms ease;
+
+  --content-padding: 1rem;
 }
 
 
@@ -504,4 +506,83 @@ main .user-table a{
   display: block;
   margin: 1rem auto;
   color: var(--color-primary);
+}
+
+/* ======== page 56 ========== */
+/* ======== Teacher Profile ========== */
+main .teacher-profile{
+  display: grid;
+  width: 100%; /*96%*/
+  margin: 0 auto;
+  gap: 1rem;
+  grid-template-columns: 25% auto;
+  padding: var(--content-padding);
+  align-content: center;
+}
+
+main .teacher-profile .profile-detail{
+  border-right: 2px solid #F0F0F0;
+  /* transform: rotate(90deg); */
+  padding: 10px 50px;
+}
+
+main .teacher-profile img{
+  border-radius: 50%;
+}
+
+main .teacher-profile h3, h5{
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+main .teacher-profile h5{
+  font-weight: 100;
+}
+
+main .teacher-profile .teacher-info table{
+  margin: 20px auto;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+main .teacher-profile .teacher-info table td{
+  font-weight: 100;
+  border: 0px;
+  padding: 25px;
+}
+
+/* ======== Student report ========== */
+/* main .student-table{
+  margin: auto;
+} */
+
+main .student-table h3{
+  width: 198px;
+  height: 46px;
+  padding: 15px 40px;
+  /* position: relative; */
+  background: #F7F7FA;
+  border-radius: 10px;
+  margin-left: 40%;
+}
+
+main .student-table table{
+  border: 1px solid rgba(0, 160, 6, 0.75);
+  border-radius: 10px;
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+main .student-table table tbody td{
+  height: 2.8rem;
+  border: 1px solid #F0F0F0;
+  border-radius: 100px;
+}
+
+main .student-table table td img{
+  height: 30px;
+  width: 30px;
 }
